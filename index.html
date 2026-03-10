@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Somaida — Portofolio</title>
+  <meta name="description" content="Portofolio Somaida — Web Developer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Somaida</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">🌓</button>
+        <button id="menu-toggle" class="btn-icon mobile-only" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="reveal">Hai, saya <span class="accent">Somaida</span></h1>
+          <p class="lead reveal delay-1">Saya seorang web developer yang membuat antarmuka modern dan performa cepat.</p>
+          <p class="typewriter reveal delay-2">Saya bekerja pada: <span id="typed"></span></p>
+          <div class="hero-cta reveal delay-3">
+            <a href="#projects" class="btn">Lihat proyek</a>
+            <a href="#contact" class="btn btn-ghost">Hubungi saya</a>
+          </div>
+        </div>
+        <div class="hero-right reveal delay-2">
+          <div class="card-glass">
+            <div class="avatar">S</div>
+            <h3>Web Developer</h3>
+            <p>Front-end, UI/UX, Animasi</p>
+            <div class="links">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C360,140 1080,-20 1440,60 L1440 120 L0 120 Z" fill="currentColor" opacity="0.08"/>
+      </svg>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About</h2>
+        <div class="grid-2">
+          <div class="reveal">
+            <p>Saya membangun aplikasi web modern dengan fokus pada pengalaman pengguna dan performa.
+            Berpengalaman dengan HTML, CSS, JavaScript, serta framework seperti React / Vue.</p>
+            <ul>
+              <li>Buat UI responsif dan aksesibel</li>
+              <li>Animasi halus untuk interaksi</li>
+              <li>Optimisasi dan deploy</li>
+            </ul>
+          </div>
+          <div class="reveal delay-1">
+            <h3>Quick Facts</h3>
+            <p>Lokasi: Jakarta — Bekerja remote / freelance — Buka untuk peluang baru</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid reveal delay-1">
+          <div class="skill">
+            <h4>HTML & CSS</h4>
+            <div class="progress"><span style="--w:95%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>JavaScript</h4>
+            <div class="progress"><span style="--w:90%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>React / Vue</h4>
+            <div class="progress"><span style="--w:80%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>UI / Animasi</h4>
+            <div class="progress"><span style="--w:85%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="projects-grid reveal delay-1">
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Project A</h3>
+              <p>Landing page interaktif dengan animasi performa tinggi.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <a class="project-link" href="#" target="_blank" rel="noopener">Lihat detail →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Project B</h3>
+              <p>Aplikasi SPA dengan state management dan optimisasi.</p>
+              <div class="project-tags">
+                <span>React</span><span>API</span>
+              </div>
+              <a class="project-link" href="#" target="_blank" rel="noopener">Lihat detail →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Project C</h3>
+              <p>Dashboard interaktif dan visualisasi data.</p>
+              <div class="project-tags">
+                <span>Vue</span><span>D3</span>
+              </div>
+              <a class="project-link" href="#" target="_blank" rel="noopener">Lihat detail →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid reveal delay-1">
+          <form id="contact-form" class="contact-form" action="mailto:your@email.com" method="post" enctype="text/plain">
+            <label>
+              Nama
+              <input type="text" name="name" required placeholder="Nama kamu">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="email@contoh.com">
+            </label>
+            <label>
+              Pesan
+              <textarea name="message" rows="5" required placeholder="Tulis pesan..."></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn">Kirim</button>
+              <button type="reset" class="btn btn-ghost">Reset</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <h3>Atau hubungi langsung</h3>
+            <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/username</a></p>
+            <p>GitHub: <a href="#" target="_blank">github.com/username</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Somaida — Dibuat dengan ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
